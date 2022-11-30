@@ -11,7 +11,7 @@ function checksubmit(){
             html: 'Sign Up Successfully'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location="./login.html";
+                window.location="";
             }
         })
     }

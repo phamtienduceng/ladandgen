@@ -5,57 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/sign up.css" />
-    <script src="./js/sign up.js"></script>
+    <link rel="stylesheet" href="../CSS/sign up.css" />
+    <script src="../JS/sign up.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.14/sweetalert2.all.min.js"></script>
     <script src="../JS/angular.min.js"></script>
+    <script src="../assets/js/jquery-2.1.0.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/custom.js"></script>
     <title>Sign up</title>
   </head>
-  <body  class="op" ng-app>
-    <div class="w">
-      <div class="w-heading">
-        <h1>Sign Up</h1>
-      </div>
+  <body ng-app>
+    <div ng-include="'./header.html'"></div>
+    <p class="section-login">Sign Up</p>
+    <div class="section-form">
       <form name="myForm">
-        <div class="i__field">
-          <input id="username" type="text" placeholder="User Name" name="name" ng-model="name" ng-Minlength="3" ng-Maxlength="6" required />
-          <p ng-show="myForm.name.$error.required" style="color: red;">Required!</p>
-          <p ng-show="myForm.name.$error.minlength " style="color: red;"> Min-length is 3!</p>
-          <p ng-show="myForm.name.$error.maxlength " style="color: red;"> Max-length is 6!</p>
-        </div>
-        <div class="i__field">
-          <input id="email" type="email" placeholder="Email" name="Input" ng-model="Input" ng-Minlength="6" ng-Maxlength="18" required />
-          <p ng-show="myForm.Input.$error.required" style="color: red;">Required!</p>
-          <p ng-show="myForm.Input.$error.email" style="color:red ;">Not valid email</p>
-          <p ng-show="myForm.Input.$error.minlength " style="color: red;"> Min-length is 6!</p>
-          <p ng-show="myForm.Input.$error.maxlength" style="color: red;"> Max-length is 18!</p>
-        </div>
-        <div class="i__field">
-          <input id="phone" type="number" placeholder="Phone" name="number" ng-model="number" ng-min="0" ng-max="100000000000" required />
-          <p ng-show="myForm.number.$error.max" style="color: red;" >Max is 10!</p>
-          <p ng-show="myForm.number.$error.required" style="color: red;" >Required!</p>
-        </div>
-        <div class="i__field">
-          <input id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6" required/>
-          <p ng-show="myForm.pass.$error.required" style="color: red;">Required!</p>
-          <p ng-show="myForm.pass.$error.minlength " style="color: red;"> min-length is 6!</p>
-        </div>
-        <div class="i__field">
-          <input id="confirm" type="password" placeholder="Confirm Password" name="pass" ng-model="pass" ng-Minlength="6" required/>
-          <p ng-show="myForm.pass.$error.required" style="color: red;">Required!</p>
-          <p ng-show="myForm.pass.$error.minlength " style="color: red;"> min-length is 6!</p>
-        </div>
-        <a href="./login.html" class="l-link">Login</a>
-         <button type="submit" class="btn btn-sign" onclick="checksubmit()" ng-disabled="myForm.$invalid">Sign Up</button>
-         <hr>
-         <div class="s">
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-				</div>
-        </form>
+        <table>
+          <tr>
+            <td>
+              <input class="login-input" id="username" type="text" placeholder="User Name" name="name" ng-model="name" ng-Minlength="3" ng-Maxlength="6" ng-required />
+          </tr>
+          <tr>
+            <td><input class="login-input" id="email" type="email" placeholder="Email" name="Input" ng-model="Input" ng-Minlength="6" ng-Maxlength="18" />
+          </tr>
+          <tr>
+            <td>
+              <input class="login-input" id="phone" type="number" placeholder="Phone" name="number" ng-model="number" ng-min="0" ng-max="100000000000"  />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="login-input" id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="login-input" id="confirm" type="password" placeholder="Confirm Password" name="pass" ng-model="pass" ng-Minlength="6" />
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <button  type="submit" class="btn-login" onclick="checksubmit()">Sign Up</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <ul class="log">
+              <li class="logo-contact"><a href="#" class="fa fa-facebook fa-item"></a></li>
+              <li class="logo-contact"><a href="#" class="fa fa-twitter fa-item"></a></li>
+              <li class="logo-contact"><a href="#" class="fa fa-google"></a></li>
+            </ul>
+          </tr>
+          <tr>
+            <td>
+              <hr class="login-hr">
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+                <input class="btn-login" type="button" value="Already Have Account?">
+            </td>
+          </tr>
+        </table>
+      </form>
     </div>
+    <div ng-include="'./footer.html'"></div>
   </body>
 </html>
