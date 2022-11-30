@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lad&Gen</title>
+
+    <script src="../assets/js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="animations.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/ladgen.css">
+    <link rel="stylesheet" href="../assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/choose.css">
+    <link rel="stylesheet" href="../CSS/bestSeller.css">
+</head>
+    
+<body ng-app="">
+
+    <div ng-include="'./HTMl/header.html'"></div>
+    
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div >
+                    <div class="left-content">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img  src="../Pictures/index/mensuit.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img  src="../Pictures/index/fashion.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../Pictures/index/mensuit2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="../Pictures/index/peakpx.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    
+
+    <!-- ***** Popular Stylist Starts ***** -->
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Popular Stylist</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/rebecca.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Rebecca Corbin-Murray</h4>
+                                    <span>American</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/elizabeth.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Elizabeth Stewart</h4>
+                                    <span>France</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/rob.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Rob Zangardi</h4>
+                                    <span>England</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/kate.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Kate</h4>
+                                    <span>Italia</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/asley.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Asley</h4>
+                                    <span>American</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Popular Stlist Area End ***** -->
+
+    <!-- ***** Advertise 1 Area Start ***** -->
+    <section class="section">
+        <div class="layout3">
+            <div> <img class="img2" src="../Pictures/index/b1.jpg" width="100%" alt=""></div>
+            <div> <img class="img2" src="../Pictures/index/b2.jpg" width="100%"    alt=""></div>
+            <div> <img class="img2" src="../Pictures/index/b3.jpg" width="100%"    alt=""></div>
+            <div> <img class="img2" src="../Pictures/index/b4.jpg" width="100%"    alt=""></div>
+            <div> <img class="img2" src="../Pictures/index/b5.jpg" width="100%"    alt=""></div>
+            <div> <img class="img2" src="../Pictures/index/b6.jpg" width="100%"    alt=""></div>
+        </div>
+    </section>
+    <!-- ***** Advertise 1 Area End ***** -->
+
+
+    <!-- ***** Best Seller Area Starts ***** -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading  best-seller">
+                        <h2>Best Seller</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout">
+            <div class="layout-item layout-item-left">
+                <div>
+                    <video class="card-img1" width="100%" loop muted autoplay src="../Pictures/index/v2.mp4"></video>
+                </div>
+                <div class="main-border-button1 ">
+                    <a href="./product/productPage-newArrivals.html">Discover More</a>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card card-img" >
+                    <img class="card-img" width="100%" src="../Pictures/index/sel1.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Mid Brown Herringbone Havana Suit</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card">
+                    <img class="card-img" width="100%" src="../Pictures/index/sel2.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Mid Blue Havana Men Suit</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card">
+                    <img class="card-img" width="100%" src="../Pictures/index/sel3.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Mid Grey Havana Men Suit</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card">
+                    <img class="card-img" width="100%" src="../Pictures/index/sel4.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Pimkie oversized poplin shirt in green</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card">
+                    <img class="card-img" width="100%" src="../Pictures/index/sel5.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Stradivarius montana sweatshirt in green</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="layout-item">
+                <div class="card">
+                    <img class="card-img" width="10  0%" src="../Pictures/index/sel6.jpg" alt="Denim Jeans" style="width:100%">
+                    <p class="item-name">Stradivarius cropped sweatshirt in charcoal</p>
+                    <p class="price">$19.99</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Best Seller Area Ends ***** -->
+
+    <!-- ***** Advertisement 2 Area Ends ***** -->
+    <section class="section">
+        <div class="layout2">
+            <div> 
+                <img class="img1" src="../Pictures/index/trending1.jpg" width="100%" alt="">
+            </div>
+            <div> <img class="img1" src="../Pictures/index/trending2.png" width="100%" alt=""></div>
+
+        </div>
+    </section>
+    <!-- ***** Advertisement 2 Area Ends ***** -->
+
+    <!-- ***** Recommend Area Starts ***** -->
+    <section class="section" id="kids">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Recommend for you</h2>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="kid-item-carousel">
+                        <div class="owl-kid-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/sel1.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>School Collection</h4>
+                                    <span>$80.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/sel2.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Summer Cap</h4>
+                                    <span>$12.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/sel3.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Kid</h4>
+                                    <span>$30.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="single-product.html"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="../Pictures/index/sel4.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Spring</h4>
+                                    <span>$120.00</span>
+                                    <ul class="stars">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Recommend Area Ends ***** -->
+
+    
+    <!-- ***** Accessories Area Starts ***** -->
+    <section class="section" id="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Accessories</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row images">
+                <div class="col-2  item__1">
+                    <div class="thumb">
+                        <a href=""><img src="../Pictures/index/hatt.jpg" alt=""></a>             
+                    </div>
+                    <figcaption>Hat</figcaption>
+                </div>
+                <div class="col-2 item__1">
+                    <div class="thumb">
+                        <a href=""><img src="../Pictures/index/menboot.jpg" alt=""></a>             
+                    </div>
+                    <figcaption>Boot</figcaption>
+                </div>
+                <div class="col-2 item__1">
+                    <div class="thumb">
+                        <a href=""><img src="../Pictures/index/feminine-glasses.jpg" alt=""></a>             
+                    </div>
+                    <figcaption>Glasses</figcaption>
+                </div>
+                <div class="col-2 item__1">
+                    <div class="thumb">
+                        <a href=""><img src="../Pictures/index/tie.jpg" alt=""></a>             
+                    </div>
+                    <figcaption>Tie</figcaption>
+                </div>
+                <div class="col-2   ">
+                    <div class="thumb">
+                        <a href=""><img src="../Pictures/index/belt.jpg" alt=""></a>             
+                    </div>
+                    <figcaption>Belt</figcaption>
+                </div>
+        </div>
+    </section>
+    <!-- ***** Accessories Area Ends ***** -->
+
+    <!-- ***** Blog Area Starts ***** -->
+    <section class="section" id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h2>Blog</h2>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>Don’t be into trends. Don’t make fashion own you, but you decide what you are - Gianni Versace</p>
+                        </div>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>I find beauty in the grotesque, like most artists. I have to force people to look at things - Alexander McQueen</p>
+                        </div>
+                        <img src="../Pictures/index/fashionstylist.jpg" alt="">
+                        <div class="main-border-button">
+                            <a href="./HTML/blog.html">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="../Pictures/index/model.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="../Pictures/index/ncqueen.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="../Pictures/index/fashion show.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="../Pictures/index/acc.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Blog Area Ends ***** -->
+
+    <!-- ***** Why Area Starts ***** -->
+    <section class="section__fit__panel">
+        <div class="wrapper">
+            <h2 class="title">Why you should choose Lad&Gen?</h2>
+            <div class="row p-0">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <img width="20%" src="../Pictures/index/610333.png" alt="Needle and yarn">
+                    <p class="head">Quality and Exquisite Products</p>
+                    <p class="sub-head">We guarantee the quality of our products with the world's finest fabrics and meticulous manufacturing processes</p>
+                    
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <img width="20%" src="../Pictures/index/2.png">
+                    <p class="head">Design by Famous Stylist</p>
+                    <p class="sub-head">Designed by top designers around the world</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <img width="20%" src="../Pictures/index/3.png" alt="Measurement tape">
+                    <p class="head">Good Customer Service</p>
+                    <p class="sub-head">We guarantee to give our customers the best experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Why Area Ends ***** -->
+
+    <div ng-include="'./HTML/footer.html'"></div>
+    
+
+    <!-- jQuery -->
+    <script src="../assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/accordions.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/scrollreveal.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/imgfix.min.js"></script> 
+    <script src="../assets/js/slick.js"></script> 
+    <script src="../assets/js/lightbox.js"></script> 
+    <script src="../assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="../assets/js/custom.js"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+    </script>
+</body>
+</html>

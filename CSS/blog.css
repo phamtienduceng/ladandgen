@@ -1,0 +1,130 @@
+.header-blog{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.header-blog-p{
+    font-size: 20px;
+    margin-bottom: -50px;
+    font-style: italic;
+}
+
+.layout11{
+    margin-top: 100px;
+    margin-bottom: -50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px;
+    margin-left: 120px;
+    margin-right: 110px;
+    gap: 20px;
+    
+} 
+
+.layout-item-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+    border: black solid 1px;
+    font-size: 20px;  
+    gap: 10px;
+}
+
+.layout-item-blog-1{
+    margin-bottom: -5px;
+}
+
+.layout12{
+    margin-top: 100px;
+    margin-bottom: -50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 240px;
+    margin-left: 120px;
+    margin-right: 110px;
+    gap: 20px;
+    
+} 
+
+.layout-item-header-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+    border: black solid 1px;
+    font-size: 20px;  
+    gap: 10px;
+}
+
+.p-blog{
+    padding-left: 10px;
+}
+
+.world{
+    color: red;
+}
+
+.design{
+    color: orange;
+}
+
+.social{
+    color: green;
+}
+
+
+.p-item-1{
+    font-weight: bold ;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.p-item-2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -5px;
+}
+.p-item-3{
+
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.p-item-4{
+    font-size: 20px;
+    margin-top: -15px;
+    font-style: italic;
+}
+a{
+    padding-left: 10px;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.main-border-button3 a {
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid black;
+    padding: 12px 25px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .3s;
+  }
+  
+  .main-border-button3 a:hover {
+    background-color: #fff;
+    color: #2a2a2a;
+  }
+
+  .main-border-button3 a {
+    color: #2a2a2a;
+    border-color: #2a2a2a;
+    margin-top: 5px; 
+  }
+  .main-border-button3 a:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  .margin-bot{
+    margin-bottom: 50px;
+  }

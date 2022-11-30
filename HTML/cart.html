@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <script src="../JS/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <div ng-include="'../HTML/header.html'"></div>
+    <div class="wrapper">
+        <h1>Shopping Cart</h1>
+            <div class="project">
+            <div class="shop">
+                <div class="box">
+                <img src="../Pictures/index/sel2.jpg" />
+                <div class="content">
+                    <h3>New Green Jacket</h3>
+                    <h4>Price: $120.00</h4>
+                    <p class="unit">Quantity: <input name="" value="2" /></p>
+                    <p class="btn-area">
+                    <i aria-hidden="true" class="fa fa-trash"></i>
+                    <span class="btn2">Remove</span>
+                    </p>
+                </div>
+                </div>
+                <div class="box">
+                <img src="../Pictures/index/sel1.jpg" />
+                <div class="content">
+                    <h3>Classic Dress</h3>
+                    <h4>Price: $45.00</h4>
+                    <p class="unit">Quantity: <input name="" value="1" /></p>
+                    <p class="btn-area">
+                    <i aria-hidden="true" class="fa fa-trash"></i>
+                    <span class="btn2">Remove</span>
+                    </p>
+                </div>
+                </div>
+                <div class="box">
+                <img src="../Pictures/index/sel3.jpg" />
+                <div class="content">
+                    <h3>Spring Collection</h3>
+                    <h4>Price: $130.00</h4>
+                    <p class="unit">Quantity: <input name="" value="0" /></p>
+                    <p class="btn-area">
+                    <i aria-hidden="true" class="fa fa-trash"></i>
+                    <span class="btn2">Remove</span>
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="right-bar">
+                <p><span>Subtotal</span> <span>$299.00</span></p>
+                <hr />
+                <p><span>Tax (5%)</span> <span>$14.95</span></p>
+                <hr />
+                <p><span>Shipping</span> <span>$15</span></p>
+                <hr />
+                <p><span>Total</span> <span>$328.95</span></p>
+                <a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+            </div>
+            </div>
+        </div>
+    <div ng-include="'../HTML/footer.html'"></div>
+</body>
+</html>

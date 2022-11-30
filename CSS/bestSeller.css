@@ -1,0 +1,141 @@
+.layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 340px 340px;
+    margin-left: 120px;
+    margin-right: 110px;
+    gap: 10px;
+}
+
+.layout-item{
+    overflow: hidden;
+}
+.layout-item-left{
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+
+.best-seller{
+    margin-bottom: 50px;
+}
+
+.layout-item:first-child{
+    grid-row: 1/3;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 200px;
+margin: auto;
+text-align: center;
+font-family: arial;
+border-radius: 15px;
+}
+
+.item-name{
+    font-size: 17px;
+    padding-top: 5px;
+    margin-bottom: -1px;
+}
+
+.price {
+padding-top: 5px;
+color: black;
+font-size: 15px;
+}
+
+.card button {
+    margin-top: -10px;
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+
+.card button:hover {
+opacity: 0.7;
+}
+
+.layout2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 90px;
+    grid-gap: 30px;
+}
+
+.layout3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 90px;
+    grid-gap: 30px;
+    margin-bottom: 90px;
+}
+
+.card-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img1{
+    border-radius: 20px;
+}
+.button1{
+    margin-left: 150px;
+}
+.center {
+    text-align: center;
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .img1{
+    border-radius: 2    0px;
+  }
+
+  .img2{
+    border: #000 1px solid;
+  }
+
+  .acc-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  figcaption{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+  }

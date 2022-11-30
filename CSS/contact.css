@@ -1,0 +1,113 @@
+.layout-contact{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 120px;
+    margin-right: 110px;
+    gap: 20px;
+    
+  }
+
+  .layout-contact-2{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 120px;
+    margin-right: 110px;
+    gap: 20px;
+    
+  }  
+  
+  .layout-item{
+    overflow: hidden;
+    border: black solid 1px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+
+  .layout-item2{
+    overflow: hidden;   
+    border-radius: 25px;
+    font-size: 18px;
+  }
+
+
+  .fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .log{
+    text-align: center;
+  }
+
+  .logo-contact{
+    list-style: none;
+    display: inline-block;
+    margin-bottom: -20px;
+  }
+  .header{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+  }
+  form{
+    margin-left: 30px;
+  }
+  .form1{
+    border: 0.5px black solid;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    width: 300px;
+  }
+  .form2{
+    border-radius: 25px;
+    margin-bottom: 5px;
+  }
+  .form3{
+    border-radius: 25px;
+    border: 1px white solid;
+  }
+
+  .img11{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .formtable{
+    margin-left: 15px;
+  }
+
+  .fa-item{
+    margin-right: 10px;
+  }
+  .head1{
+    text-align: center;
+    padding-top: 50px;
+  }
