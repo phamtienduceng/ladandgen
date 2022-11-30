@@ -26,10 +26,50 @@
     <script src="./assets/js/custom.js"></script>
 
 </head>
-    
 <body ng-app="">
-    <div ng-include="'./HTML/header.html'"></div>
 
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="../index.html" class="logo">
+                            <img width="50%" src="../Pictures/index/logo.jpg">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="./HTML/product/productPage-newArrivals.html">Product</a></li>
+                            <li><a href="./HTML/stylist.html">Stylist</a></li>
+                            <li><a href="#">Custom</a></li>
+                            <li><a href="./HTML/blog.html">Blog</a></li>
+                            <li><a href="./HTML/about.html">About us</a></li>
+                            <li class="submenu item1">
+                                 <a href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                  </svg></a>
+                                <ul>
+                                    <li><a href="./HTML/login.html">Login</a></li>
+                                    <li><a href="./HTML/sign up.html">Sign up</a></li>
+                                    <li><a href="./HTML/payment.html">Payment</a></li>
+                                    <li><a href="./HTML/contact us.html">Contact us</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./HTML/cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                              </svg></a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
         <div class="container-fluid">
@@ -503,9 +543,62 @@
             </div>
         </div>
     </section>
-    <!-- ***** Why Area Ends ***** -->
 
-    <div ng-include="'./HTML/footer.html'"></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3" >
+                    <div class="first-item">
+                        <div class="logo">
+                            <img width="65%" src="../Pictures/index/logo.jpg">
+                        </div>
+                        <ul>
+                            <li><a href="#">District 3 Ho Chi Minh City</a></li>
+                            <li><a href="#">ladandgen@company.com</a></li>
+                            <li><a href="#">0123456789</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="../product/productPage-newArrivals.html">Product</a></li>
+                        <li><a href="../product/productPage-newArrivals.html">Best Seller</a></li>
+                        <li><a href="../product/productPage-newArrivals.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Custom Design</h4>
+                    <ul>
+                        <li><a href="../stylist.html">Stylist</a></li>
+                        <li><a href="#">Custom</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../About us/about.html">About Us</a></li>
+                        <li><a href="../contact us/contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 Lad&Gen Co., Ltd. All Rights Reserved. 
+                            <div>
+                                <ul class="icon-footer">
+                                    <li class="icon-footer"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="icon-footer"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="icon-footer"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="icon-footer"><a href="#"><i class="fa fa-behance"></i></a></li>
+                                </ul>
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Why Area Ends ***** -->>
     
 
     <!-- jQuery -->
