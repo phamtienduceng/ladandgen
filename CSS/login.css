@@ -1,34 +1,38 @@
 .section-login{
-  margin-top: 130px;
+  margin-top: 30px;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .section-form{
-  border:white 0.5px solid;
-  border-radius: 10px;
+  background-color: rgb(248, 244, 244);
   width: fit-content;
+  margin-top: -35px;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
   padding: 20px;
 }
 .login-input{
-  border: 5px black 1px;
+  border:lightblue 0.5px solid;
   border-radius: 10px;
-  margin-bottom: 10px;
-  font-size: 25px;
-  padding: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 300px;
+  height: 45px;
 }
 .btn-login{
-  border: black solid 1px;
+  border: none;
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
+  color: white;
   padding-left: 10px;
   padding-right: 10px;
+  background-color:  #58d76b;
 }
 .center {
   display: flex;
@@ -44,11 +48,12 @@
   display: inline-block;
   margin-bottom: -20px;
 }
-.fa {
-  padding: 15px;
+.fa{
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 60px;
   width: 60px;
-  height: 60px;
+  height: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -82,4 +87,35 @@
 }
 .creat{
   border-radius: 10px;
+}
+.login-hr{
+  border: none;
+  height: 1px;
+  color: black;
+  background-color: grey;
+}
+.layout-login{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 120px;
+  margin-right: 110px;
+}
+
+.layout-login-item{
+  overflow: hidden;
+}
+
+.layout-login-item:nth-child(2){
+  grid-row: 1/3;
+}
+.img-login{
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-or{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

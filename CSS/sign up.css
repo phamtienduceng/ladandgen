@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 .section-form{
-  border:black 0.5px outset;
+  border: red 1px solid;
   border-radius: 10px;
   width: fit-content;
   margin-left: auto;
@@ -15,7 +15,7 @@
   padding: 20px;
 }
 .login-input{
-  border: 5px black 1px;
+  border: 0.5px black solid;
   width: 300px;
   border-radius: 10px;
   margin-bottom: 10px;

@@ -16,15 +16,18 @@
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/custom.js"></script>
   </head>
+
 <body ng-app="">
   <div ng-include="'./header.html'"></div>
-  <p class="section-login">Log In</p>
-  <div class="section-form">
+  <div class="layout-login">
+  <p class="section-login layout-login-item">Log In</p>
+  <div class="layout-login-item img-login"><img src="../Pictures/contactUs/2f0b91d5169ce6c875278ebda3299d6b.jpg" alt=""></div>
+  <div class="section-form layout-login-item">
     <form name="myForm">
       <table>
         <tr>
           <td>
-            <input class="login-input" id="username" type="text" name="name" ng-model="name" ng-Minlength="3" placeholder="UserName" required />
+            <input class="login-input" id="username" type="text" name="name" ng-model="name" ng-Minlength="3" placeholder="Username" required />
             <p ng-show="myForm.name.$error.minlength " style="color: red;"> min-length is 3!</p></td>
         </tr>
         <tr>
@@ -32,14 +35,17 @@
             <p ng-show="myForm.pass.$error.minlength " style="color: red;"> min-length is 6!</p></td>
         </tr>
         <tr>
+          <td class="login-forgot"><a href="../index.html" >Forgotten password?</a></td>
+        </tr>
+        <tr>
           <td class="center">
             <button  type="submit" class="btn-login " onclick="checksubmit()">Login</button>
           </td>
-          
+          <tr>
+            <td class="login-or">Or you can log in with</td>
+          </tr>
         </tr>
-        <tr>
-          <td class="login-forgot"><a href="../index.html" >Forgotten password?</a></td>
-        </tr>
+        
         <tr>
           <td class="center">
             <ul class="log">
@@ -50,17 +56,18 @@
         </tr>
         <tr>
           <td>
-            <hr>
+            <hr class="login-hr">
           </td>
         </tr>
         <tr>
           <td class="center">
-              <input class="btn-login" type="button" value="Creat New Account">
+              <input class="btn-login" type="button" value="Create New Account">
           </td>
         </tr>
       </table>
     </form>
   </div>
+</div>
   <div ng-include="'./footer.html'"></div>
 </body>
 </html>
