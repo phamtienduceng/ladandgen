@@ -14,39 +14,48 @@
     <script src="../assets/js/custom.js"></script>
     <title>Sign up</title>
   </head>
-  <body ng-app>
+  <body ng-app="">
     <div ng-include="'./header.html'"></div>
-    <p class="section-login">Sign Up</p>
-    <div class="section-form">
+    <div class="layout-signup">
+    <p class="section-signup layout-signup-item">Sign Up</p>
+    <div class="layout-signup-item img-signup"><img src="../Pictures/contactUs/Retail Interior.jpg" alt=""></div>
+    <div class="section-form layout-signup-item">
       <form name="myForm">
         <table>
           <tr>
             <td>
-              <input class="login-input" id="username" type="text" placeholder="User Name" name="name" ng-model="name" ng-Minlength="3" ng-Maxlength="6" ng-required />
+              <input class="signup-input" id="username" type="text" placeholder="Full Name" name="name" ng-model="name" ng-Minlength="3" ng-Maxlength="6" ng-required />
           </tr>
           <tr>
-            <td><input class="login-input" id="email" type="email" placeholder="Email" name="Input" ng-model="Input" ng-Minlength="6" ng-Maxlength="18" />
+            <td><input class="signup-input" id="email" type="email" placeholder="Email" name="Input" ng-model="Input" ng-Minlength="6" ng-Maxlength="18" />
           </tr>
           <tr>
             <td>
-              <input class="login-input" id="phone" type="number" placeholder="Phone" name="number" ng-model="number" ng-min="0" ng-max="100000000000"  />
+              <input class="signup-input" id="phone" type="number" placeholder="Phone" name="number" ng-model="number" ng-min="0" ng-max="100000000000"  />
             </td>
           </tr>
           <tr>
             <td>
-              <input class="login-input" id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6" />
+              <input class="signup-input" id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6" />
             </td>
           </tr>
           <tr>
             <td>
-              <input class="login-input" id="confirm" type="password" placeholder="Confirm Password" name="pass" ng-model="pass" ng-Minlength="6" />
+              <input class="signup-input" id="confirm" type="password" placeholder="Confirm Password" name="pass" ng-model="pass" ng-Minlength="6" />
             </td>
+          </tr>
+          <tr>
+            <td class="signup-agree">By continuing, you agree to Lad&Gen's Terms of Service and acknowledge you've read our Privacy Policy</td>
           </tr>
           <tr>
             <td class="center">
-              <button  type="submit" class="btn-login" onclick="checksubmit()">Sign Up</button>
+              <button  type="submit" class="btn-signup " onclick="checksubmit()">Sign Up</button>
             </td>
+            <tr>
+              <td class="signup-or">Or you log in with</td>
+            </tr>
           </tr>
+          
           <tr>
             <td class="center">
               <ul class="log">
@@ -57,17 +66,16 @@
           </tr>
           <tr>
             <td>
-              <hr class="login-hr">
+              <hr class="signup-hr">
             </td>
           </tr>
           <tr>
-            <td class="center">
-                <input class="btn-login" type="button" value="Already Have Account?">
-            </td>
+            <td class="signup-forgot"><a href="../HTML/login.html" >Already have account?</a></td>
           </tr>
         </table>
       </form>
     </div>
+  </div>      
     <div ng-include="'./footer.html'"></div>
   </body>
 </html>
