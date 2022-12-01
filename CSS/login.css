@@ -1,5 +1,5 @@
 .section-login{
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   font-size: 50px;
   font-weight: 500;
@@ -8,7 +8,7 @@
 .section-form{
   background-color: rgb(248, 244, 244);
   width: fit-content;
-  margin-top: -35px;
+  margin-top: -45px;
   margin-left: auto;
   margin-right: auto;
   font-size: 30px;
@@ -32,7 +32,7 @@
   width: 300px;
   color: white;
   padding-bottom: 5px;
-  background-color:  #58d76b;
+  background-color:  #4bca5e;
 }
 .btn-login2{
   border: none;
