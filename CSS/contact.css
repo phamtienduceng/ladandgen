@@ -12,6 +12,7 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 330px;
     margin-left: 120px;
     margin-right: 110px;
     gap: 20px;
@@ -20,7 +21,7 @@
   
   .layout-item{
     overflow: hidden;
-    border: black solid 1px;
+    border: lightblue solid 1px;
     border-radius: 25px;
     font-size: 20px;
   }
@@ -29,10 +30,45 @@
     overflow: hidden;   
     border-radius: 25px;
     font-size: 18px;
+    height: 400px;
+  }
+  .contactimg{
+    height: 350px;
+  }
+  .contact-input{
+    border:lightblue 0.5px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 45px;
+  }
+  .contact-input1{
+    border:lightblue 0.5px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
   }
 
-
+  .btn-contact{
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  #58d76b;
+    padding-bottom: 5px;
+    width: 200px;
+  }
   .fa {
+    margin-top: -40px;
     padding: 20px;
     font-size: 60px;
     width: 60px;
@@ -64,7 +100,6 @@
   .log{
     text-align: center;
   }
-
   .logo-contact{
     list-style: none;
     display: inline-block;
@@ -75,20 +110,12 @@
     text-align: center;
     padding: 20px;
     font-weight: 500;
+    margin-bottom: 0px;
   }
   form{
     margin-left: 30px;
   }
-  .form1{
-    border: 0.5px black solid;
-    margin-bottom: 15px;
-    border-radius: 25px;
-    width: 300px;
-  }
-  .form2{
-    border-radius: 25px;
-    margin-bottom: 5px;
-  }
+
   .form3{
     border-radius: 25px;
     border: 1px white solid;
@@ -102,6 +129,7 @@
 
   .formtable{
     margin-left: 15px;
+
   }
 
   .fa-item{
@@ -110,4 +138,7 @@
   .head1{
     text-align: center;
     padding-top: 50px;
+  }
+  .information{
+    padding-left: 15px;
   }
