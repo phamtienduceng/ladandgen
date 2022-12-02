@@ -1,0 +1,123 @@
+.custom-layout{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 400px 400px 400px;
+    background-color:rgb(248, 244, 244);
+    padding: 40px 0px 30px 40px;
+    border-radius: 25px;
+    border: black solid 1px;
+}
+.stylist-layout{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  margin-top: 10px;
+}
+
+.custom-input{
+    border: lightblue  0.5px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    background-color:white;
+  }
+  .btn-custom{
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background-color:  #58d76b;
+    padding-bottom: 5px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .custom-item{
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .custom-item1{
+    font-size: 24px;
+    margin-bottom: 5px;
+    padding-left: 0px;
+  }
+  .custom-header1{
+    margin-bottom: 5px;
+  }
+  .ligrid{
+    margin-left: 20px;
+    list-style:inside;
+  }
+
+  .input1::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .input1::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  select{
+    font-size: 20px;
+    border-radius: 10px;
+    border: lightblue 0.5px solid;
+    height: 35px;
+    padding-left: 5px;
+    padding-bottom: -5px;
+  }
+  .select1{
+    font-size: 20px;
+  }
+  .header-grid{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: red;
+  }
+
+  .custom-layout-grid:nth-child(1){
+    grid-row: 1/4;
+  }
+
+  .grid1{
+    padding-left: 50px;
+  }
+  .grid2{
+    padding-left: 15px;
+  }
+  .textareacustom{
+    height: 50px;
+    width: 300px;
+    border: lightblue  0.5px solid;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .header-grid1{
+    margin-bottom: 5px;
+  }
+  img{
+    border-radius: 25px;
+  }
+.cm1{
+  padding-right: 20px;
+}
+.cm2{
+  margin-bottom: 2  px;
+}
+.hh22{
+  text-align: center;
+  font-size: 50px;
+  padding: 50px;
+  margin-bottom: -120px;
+}

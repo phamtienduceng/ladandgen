@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <script src="../JS/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+<body ng-app="">
+    <div ng-include="'./header.html'"></div>
+    <img width="100%" src="../Pictures/contactUs/stylist.jpg" alt="">
+    <h2 class="hh22">Custom Design</h2>
+    <div class="custom-layout">
+        <div class="custom-layout-grid">
+            <h3 class="header-grid">Stylist</h3>
+            <div class="custom-item">              
+                <span class="custom-header">Stylist:</span> 
+                <select class="select1 header-grid1" ng-model="stylistOption" name="" id="">
+                     <option value="rebecca">Rebbeca</option>
+                     <option value="elizabeth">Elizabeth</option>
+                     <option value="rob">Rob</option>
+                     <option value="kate">Kate</option>
+                     <option value="saltman">Saltman</option>
+                     <option value="ilaria">Ilaria</option>
+                     <option value="ashley">Ashley</option>
+                     <option value="brandon">Brandon</option>
+                     <option value="daniel">Daniel</option>
+                </select>
+             </div>
+             <div >
+                <div class="stylist-layout" ng-show="stylistOption=='rebecca'">
+                    <div><img  width="85%" src="../Pictures/stylist/rebecca.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 29</div>
+                    <div>From: American</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='elizabeth'">
+                    <div><img  width="85%" src="../Pictures/stylist/elizabeth.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 26</div>
+                    <div>From: France</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='rob'">
+                    <div><img  width="85%" src="../Pictures/stylist/rob.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 31</div>
+                    <div>From: England</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='kate'">
+                    <div><img  width="85%" src="../Pictures/stylist/kate.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 25</div>
+                    <div>From: American</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='saltman'">
+                    <div><img  width="85%" src="../Pictures/stylist/saltman.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 32</div>
+                    <div>From: France</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='ilaria'">
+                    <div><img  width="85%" src="../Pictures/stylist/Ilaria.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 34</div>
+                    <div>From: American</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='ashley'">
+                    <div><img  width="85%" src="../Pictures/stylist/asley.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 27</div>
+                    <div>From: American</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='brandon'">
+                    <div><img  width="85%" src="../Pictures/stylist/brandon.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 28</div>
+                    <div>From: American</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+                <div class="stylist-layout" ng-show="stylistOption=='daniel'">
+                    <div><img  width="85%" src="../Pictures/stylist/daniel2.jpg" alt=""></div>
+                    <div class="custom-item1">
+                        <div>Age: 33</div>
+                    <div>From: Germany</div>
+                    <div>
+                        Strength:
+                            <li class="ligrid">Classic</li>
+                            <li class="ligrid">Top clothes</li>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-layout-grid grid2">
+            <h3 class="header-grid">Body information</h3>
+            <div class="custom-item">
+                <span class="custom-header"> Age:</span>     <input class="custom-input input1" type="number">
+            </div>
+            <div class="custom-item">
+                <span class="custom-header">Height:</span>  <input class="custom-input input1" type="number"> <span  class="custom-header cm1">cm</span>
+                <span class="custom-header">Weight: </span>  <input class="custom-input input1" type="number"> <span class="custom-header">kg</span>
+            </div>
+            <div class="custom-item">   
+                <span class="custom-header">Bust:</span> <input class="custom-input input1" type="number"> <span class="custom-header"> cm   </span>
+            </div>
+            <div class="custom-item">
+                <span class="custom-header">Waist: </span><input class="custom-input input1" type="number"> <span class="custom-header"> cm   </span></div>
+            <div class="custom-item">
+                <span class="custom-header">Hip:</span> <input class="custom-input input1" type="number"> <span class="custom-header"> cm   </span></div>
+            <div class="custom-item">
+                <span class="custom-header">Skin:  </span>
+                <input style="accent-color: yellow" type="radio" name="color">
+                <input style="accent-color: white" type="radio" name="color">
+                <input style="accent-color: black" type="radio" name="color">
+                <input style="accent-color: brown" type="radio" name="color">
+            </div>
+        </div>
+        <div class="custom-layout-grid  grid1">
+            <h3 class="header-grid">Custom clothes</h3>
+            <div class="custom-item">
+                
+                <span class="custom-header">Clothe: </span>
+                    <select class="select1" ng-model="showOption" name="" id="">
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="both">Both</option>
+                <span></select>
+                <select class="select1" ng-show="showOption=='top'" name="">
+                    <option value="">Shirt</option>
+                    <option value="">T-shirt</option>
+                    <option value="">Suit</option>
+                </select>
+                <select class="select1" ng-show="showOption=='bottom'" name="">
+                    <option value="">Trousers</option>
+                    <option value="">Skirt</option>
+                    <option value="">Jooger</option>
+                </select>
+                <select class="select1"  ng-show="showOption=='both'" name="" id="">
+                    <option value="">Dress</option>
+                    <option value="">Suit</option>
+                    <option value="">Sport</option>
+                </select>
+            </div>
+            <div class="custom-item">
+                <span class="custom-header">Color:  </span>
+                <input style="accent-color: red" type="radio" name="color">
+                <input style="accent-color: blue" type="radio" name="color">
+                <input style="accent-color: green" type="radio" name="color">
+                <input style="accent-color: yellow" type="radio" name="color">
+                <input style="accent-color: white" type="radio" name="color">
+                <input style="accent-color: black" type="radio" name="color">
+                <input style="accent-color: pink" type="radio" name="color">
+            </div>
+            <div class="custom-item">
+                <span class="custom-header">Style:</span>
+                <select class="select1 cm2" name="" id="">
+                    <option value="">Classic</option>
+                    <option value="">Modern</option>
+                    <option value="">Teenager</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="custom-item">
+                <span class="custom-header1">Material:</span>
+                <select class="select1" name="" id="">
+                    <option value="">Linen</option>
+                    <option value="">Cotton</option>
+                    <option value="">Silk</option>
+                    <option value="">Velvet</option>
+                    <option value="">Wool</option>
+                    <option value="">Chiffon</option>
+                    <option value="">Jeans</option>
+                </select>
+            </div>
+            <div class="custom-item">
+                <span class="custom-header">More requirement:</span><br>
+                <textarea class="textareacustom" name="" id="" cols="30" rows="4"></textarea>
+            </div>           
+        </div>  
+        <div class="custom-layout-grid grid2">
+            <div class="custom-item"> 
+                <button class="btn-custom">Complete</button>
+            </div>
+        </div>
+        
+    </div>
+    <div ng-include="'./footer.html'"></div>
+</body>
+</html>
