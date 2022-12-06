@@ -3,6 +3,10 @@
 global styles
 --------------------------------------------- 
 */
+.padtop{
+  margin-top: 70px;
+  padding-top: 70px;
+}
 html,
 body {
   background: #fff;
@@ -130,7 +134,8 @@ footer {
   
   footer .under-footer {
     margin-top: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
     border-top: 1px solid rgba(250,250,250,0.3);
   }
