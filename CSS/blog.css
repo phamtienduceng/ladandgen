@@ -21,6 +21,12 @@
     
 } 
 
+@media screen (max-width: 900px){
+    {
+        
+    }
+}
+
 .layout-item-blog{
     display: grid;
     grid-template-columns: 2fr 1fr;
