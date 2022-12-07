@@ -13,8 +13,7 @@ Student1414248 Phạm Tiến Đức
 Student1396925 Hoàng Ngọc Phú
 ============================
 
-eProject documentation at https://github.com/lnnhi1310/Kitchen-Appliances/tree/main/documentary
-
+eProject documentation at https://github.com/phamtienduceng/ladandgen/tree/main/document
 ============================
 
 eProject published at https://phamtienduceng.github.io/ladandgen/
