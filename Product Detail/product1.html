@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../Product Detail/Style.css">
-    <link rel="stylesheet" href="../product/style.css">
     <link rel="stylesheet" href="../Product Detail/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
-
+  
     <script src="../Product Detail/javaScript.js"></script>
     <script src="../JS/angular.min.js"></script>
     <script src="../product/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <title>Product Detail 1</title>
 </head>
@@ -22,130 +18,112 @@
 
     <div ng-include="'../product/headerProduct.html'"></div>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="main-img">
-                    <img class="img-fluid" src="../Pictures/product/men/men1.jpg" alt="ProductS">
-                    <div class="row my-3 previews">
-                        <div class="col-md-3">
-                            <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Sale">
-                        </div>
-                        <div class="col-md-3">
-                            <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Sale">
-                        </div>
-                        <div class="col-md-3">
-                            <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Sale">
-                        </div>
-                        <div class="col-md-3">
-                            <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Sale">
-                        </div>
-                    </div>
+    <div class="layout-single-product">
+        <div>
+            <div><img width="100%" src="../Pictures/product/men/men1.jpg" alt=""></div>
+            <div class="layout-single-product-img">
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men1/1.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men1/2.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men1/3.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men1/4.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <div class="category text-bold">
+                Category: Men
+            </div>
+            <div class="product-title text-bold my-3">
+                Grey suit for Men
+            </div>
+            <div class="price-area my-4">
+                <p class="old-price mb-1"><del>$100</del> <span class="old-price-discount text-danger">(20% off)</span></p>
+                <p class="new-price text-bold mb-1">$80</p>
+                <p class="text-secondary">(Additional tax may apply on checkout)</p>
+
+            </div>
+
+            <div class="buttons">
+                <div class="details-title2">Size: </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">M</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">L</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">XL</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">XXL</a>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="main-description px-2">
-                    <div class="category text-bold">
-                        Category: Men
-                    </div>
-                    <div class="product-title text-bold my-3">
-                        Grey suit for Men
-                    </div>
 
-
-                    <div class="price-area my-4">
-                        <p class="old-price mb-1"><del>$100</del> <span class="old-price-discount text-danger">(20% off)</span></p>
-                        <p class="new-price text-bold mb-1">$80</p>
-                        <p class="text-secondary mb-1">(Additional tax may apply on checkout)</p>
-
-                    </div>
-
-
-                    <div class="buttons d-flex my-5">
-                        <div class="block">
-                            <a href="#" class="shadow btn custom-btn ">Wishlist</a>
-                        </div>
-                        <div class="block">
-                            <button class="shadow btn custom-btn">Add to cart</button>
-                        </div>
-
-                        <div class="block quantity">
-                            <input type="number" class="form-control" id="cart_quantity" value="1" min="0" max="5" placeholder="Enter email" name="cart_quantity">
-                        </div>
-                    </div>
-
-
-
-
+            <div class="buttons">
+                <div class="button button-item">
+                    <a href="#" class="shadow btn custom-btn ">Wishlist</a>
                 </div>
+                <div class="button button-item">
+                    <a href="#" class="shadow btn custom-btn ">Add to cart</a>
+                </div>
+            </div>
 
-                <div class="product-details my-4">
-                    <p class="details-title text-color mb-1">Product Details</p>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi odio recusandae aliquid ad impedit autem commodi earum voluptatem laboriosam? </p>
-                </div>
-              
-                         <div class="row questions bg-light p-3">
-                    <div class="col-md-1 icon">
-                        <i class="fa fa-rocket"></i>
-                    </div>
-                    <div class="col-md-11 text">
-                        Have a question about our products at E-Store? Feel free to contact our representatives via live chat or email.
-                    </div>
-                </div>
+            <div class="product-details my-4">
+                <p class="details-title">Product Details</p>
+                <p class="description2">This mid grey herringbone Havana suit is tailored slim with a natural pleated shoulder, AMF stitching, extra wide lapel with Milanese buttonhole and finished with a full canvas and butterfly lining.</p>
+            </div>
 
-                <div class="delivery my-4">
-                    <p class="font-weight-bold mb-0"><span><i class="fa fa-truck"></i></span> <b>Delivery done in 3 days from date of purchase</b> </p>
-                    <p class="text-secondary">Order now to get this product delivery</p>
+            <div class="product-details2 my-4">
+                <p class="details-title text-color mb-1">Design by:</p>
+                <a href="" class="description">Rob</a>
+            </div>
+          
+            <div class="row questions">
+                <div class="icon">
+                    <i class="fa fa-rocket"></i>
                 </div>
-                <div class="delivery-options my-4">
-                    <p class="font-weight-bold mb-0"><span><i class="fa fa-filter"></i></span> <b>Delivery options</b> </p>
-                    <p class="text-secondary">View delivery options here</p>
+                <div class="text">
+                    Have a question about our products at E-Store? Feel free to contact our representatives via live chat or email.
                 </div>
-                
-             
+            </div>
+
+            <div class="row questions2">
+                <div class="icon2">
+                    <i class="fa fa-truck"></i>
+                </div>
+                <div class="text">
+                    Delivery done in 3 days from date of purchase <br>
+                    Order now to get this product delivery                
+                </div>
+            </div>
             </div>
         </div>
     </div>
 
+    <hr>
 
-
-    <div class="container similar-products my-4">
-        <hr>
-        <p class="display-5">Similar Products</p>
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="similar-product">
-                    <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Preview">
-                    <p class="title">Lovely black dress</p>
-                    <p class="price">$100</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="similar-product">
-                    <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Preview">
-                    <p class="title">Lovely Dress with patterns</p>
-                    <p class="price">$85</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="similar-product">
-                    <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Preview">
-                    <p class="title">Lovely fashion dress</p>
-                    <p class="price">$200</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="similar-product">
-                    <img class="w-100" src="../Pictures/product/men/men1.jpg" alt="Preview">
-                    <p class="title">Lovely red dress</p>
-                    <p class="price">$120</p>
-                </div>
-            </div>
+    <p class="similar">Similar Product</p>
+    <div class="similar-product">
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men2.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men3.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men4.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men5.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
         </div>
     </div>
-
-
 
 
     </div>

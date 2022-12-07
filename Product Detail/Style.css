@@ -1,39 +1,61 @@
-
-.text-bold {
-    font-weight: 800;
+.layout-single-product{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 50px;
 }
 
-text-color {
-    color: #0093c4;
+.layout-single-product-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 20px;
 }
 
-/* Main image - left */
-.main-img img {
-    width: 100%;
+.similar-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 20px;
 }
 
-/* Preview images */
-.previews img {
-    width: 100%;
-    height: auto;
-}
-
-.main-description .category {
-    padding-top: 30px;
+.category {
     text-transform: uppercase;
-    color: #0093c4;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: brown;
 }
 
-.main-description .product-title {
-    font-size: 2.5rem;
+.product-title {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.old-price{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .old-price-discount {
     font-weight: 600;
+    font-size: 20px;
+    color: red;
 }
 
 .new-price {
-    font-size: 2rem;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.text-secondary{
+    font-size: 17px;
+    padding-bottom: 10px;
+    font-style: italic;
 }
 
 .details-title {
@@ -41,67 +63,148 @@ text-color {
     font-weight: 600;
     font-size: 1.2rem;
     color: #757575;
+    padding-bottom: 5px;
 }
 
-.buttons .block {
-    margin-right: 5px;
+.product-details2{
+    margin-bottom: 15px;
 }
 
-.quantity input {
-    border-radius: 0;
-    height: 40px;
+.description2{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
 
+.description{
+    font-size: 20px;
+    padding-bottom: 50px;
+    color: black;
 }
 
 
-.custom-btn {
-    text-transform: capitalize;
-    background-color: #0093c4;
-    color: white;
-    width: 150px;
-    height: 40px;
-    border-radius: 0;
+.description:visited{
+    color: black;
 }
 
-.custom-btn:hover {
-    background-color: #0093c4 !important;
+.buttons{
+    display: flex;
+}
+
+.button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    font-size: 35px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button-item{
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+
+.button-item a{
+    color: black;
+}
+
+.button-item a:hover{
+    color: black;
+}
+
+.button-item:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+  
+.button2 {
+    background-color: white; /* Green */
+    border: grey solid 0.1px;
+    padding:5px 10px 5px 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.details-title2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #757575;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.questions{
+    border-top: 1px solid rgb(212, 210, 210);
+    padding: 15px 15px 15px 0px;
     font-size: 18px;
-    color: white !important;
+    margin-bottom: 10px;
 }
 
-.similar-product img {
-    height: auto;
+.questions2{
+    border-bottom: 1px solid rgb(212, 210, 210);;
+    padding: 15px 15px 20px 0px;
+    font-size: 18px;
 }
 
-.similar-product {
-    text-align: left;
+.icon{
+    padding-right: 10px;
+    font-size: 35px;
 }
 
-.similar-product .title {
-    margin: 17px 0px 4px 0px;
+.icon2{
+    padding-right: 10px;
+    font-size: 33px;
 }
 
-.similar-product .price {
+.title{
+    padding: 10px 10px 5px 10px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.title a{
+    color: black;
+}
+
+.title a:visited{
+    color: black;
+}
+
+.price {
     font-weight: bold;
+    text-align: center;
+    font-size: 20px;
 }
 
-.questions .icon i {
-    font-size: 2rem;
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 82%;
 }
 
-.questions-icon {
-    font-size: 2rem;
-    color: #0093c4;
+.similar{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 50px;
 }
-
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-
-    /* Make preview images responsive  */
-    .previews img {
-        width: 100%;
-        height: 100%;
-    }
-
+.img-review:hover{
+    transform: scale(2.45) translateY(-30%);
 }
