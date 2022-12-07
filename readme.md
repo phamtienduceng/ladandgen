@@ -3,22 +3,22 @@ eProject-2022 Batch no: T1.2208.M2
 
 Project title: THE ONLINE FASHION SHOPPING WEBSITE PROJECT
 
-========> Group 01 <=========
+========> Group 04 <=========
 
-3 collaborators:
+4 collaborators:
 
-Student1397174  Lý Ngọc Nhi
-Student1396931  Lý Phú
-Student1396934  Lý Quý
-Student1396507  Bùi Minh Quang
+Student1414230 Bùi Trần Anh Trí
+Student1414357 Nguyễn Hoàng Trung
+Student1414248 Phạm Tiến Đức
+Student1396925 Hoàng Ngọc Phú
 ============================
 
 eProject documentation at https://github.com/lnnhi1310/Kitchen-Appliances/tree/main/documentary
 
 ============================
 
-eProject published at https://lnnhi1310.github.io/Kitchen-Appliances/index.html
+eProject published at https://phamtienduceng.github.io/ladandgen/
 
 ============================
 
-Thank you for spending your time to look at our work.
+Thank you for spending your time to look at our work. 
