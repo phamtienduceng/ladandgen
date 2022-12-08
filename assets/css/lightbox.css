@@ -35,6 +35,9 @@ html.lb-disable-scrolling {
   border-radius: 5px;
 }
 
+.lightbox a img {
+  border: none;
+}
 
 .lb-outerContainer {
   position: relative;
