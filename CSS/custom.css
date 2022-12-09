@@ -1,3 +1,6 @@
+#top-custom{
+  margin-top: 100px;
+}
 .custom-layout{
     margin-left: auto;
     margin-right: auto;
@@ -11,11 +14,67 @@
     border-radius: 25px;
     border: black solid 1px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+  .custom-layout{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 120px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-columns: 290px;
+    background-color:rgb(248, 244, 244);
+    padding: 20px 20px 40px 20px;
+    border-radius: 25px;
+}
+}
+
+@media screen and (min-width:481px) and  (max-width: 1024px ){
+  .custom-layout{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-columns: 400px;
+    background-color:rgb(248, 244, 244);
+    padding: 30px;
+    border-radius: 25px;
+    border: black solid 1px;
+}
+}
+
 .stylist-layout{
   display: grid;
   grid-template-columns: 5fr 5fr;
   margin-top: 10px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+  .stylist-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .stylist-img{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:481px) and  (max-width: 1024px ){
+  .stylist-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .stylist-img{
+    width: 100%;
+  }
+}
+
 
 .custom-input{
     border: lightblue  0.5px solid;
@@ -40,6 +99,35 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .btn-custom{
+      border: none;
+      border-radius: 10px;
+      height: 50px;
+      font-size: 25px;
+      color: white;
+      background-color:  #58d76b;
+      padding-bottom: 5px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px ){
+    .btn-custom{
+      border: none;
+      border-radius: 10px;
+      height: 50px;
+      font-size: 25px;
+      color: white;
+      background-color:  #58d76b;
+      padding-bottom: 5px;
+      width: 100%;
+    }
+  }
+
   .custom-item{
     font-size: 25px;
     margin-bottom: 0px;
@@ -85,6 +173,29 @@
     color: red;
   }
 
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .header-grid{
+      font-size: 35px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: red;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px ){
+    .header-grid{
+      font-size: 35px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: red;
+    }
+  }
+
+
   .custom-layout-grid:nth-child(1){
     grid-row: 1/4;
   }
@@ -92,9 +203,37 @@
   .grid1{
     padding-left: 50px;
   }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .grid1{
+      padding-left: 0px;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px ){
+    .grid1{
+      padding-left: 0px;
+    }
+  }
+
   .grid2{
     padding-left: 15px;
   }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .grid2{
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px ){
+    .grid2{
+      padding-left: 0px;
+    }
+  }
+
   .textareacustom{
     height: 50px;
     width: 300px;
@@ -103,6 +242,30 @@
     border-radius: 10px;
     font-size: 20px;
   }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .textareacustom{
+      height: 50px;
+      width: 100%;
+      border: lightblue  0.5px solid;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px ){
+    .textareacustom{
+      height: 50px;
+      width: 100%;
+      border: lightblue  0.5px solid;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+  }
+
+
   .header-grid1{
     margin-bottom: 5px;
   }
