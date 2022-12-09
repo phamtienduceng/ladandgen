@@ -121,23 +121,24 @@
                  var card = document.getElementById("card").value;
                  var tel = document.getElementById("tel").value;
                  var amount = document.getElementById("amount").value;
-                 if(username  && email && address && city && dob && card && tel && amount){
-                  Swal.fire({
-            icon: 'success',
-            title: 'Success...',
-            html: 'Pay Success'
-        })
-    }else{
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            html: 'Input Information'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location="./";
-            }
-        })
-    }
-}
-</script>
+                 if(!username){
+                    Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    angular:'ng-show="myForm.address.$error.minlength',
+                    html: 'Please Input Full Information'
+                    })
+                      }else{
+                              Swal.fire({
+                              icon: 'success',
+                              title: 'Payment successful',
+                              html: 'Thank you and see you again'
+                          }).then((result) => {
+                              if (result.isConfirmed) {
+                                window.location="../index.html";
+                              }
+                          })
+                      }
+                  }
+      </script>
 </html>

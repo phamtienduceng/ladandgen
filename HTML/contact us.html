@@ -18,12 +18,14 @@
     <script src="../assets/js/jquery-2.1.0.min.js"></script>
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.14/sweetalert2.all.min.js"></script>
     
  </head>
  <body ng-app="">
     <div ng-include="'./header.html'"></div>
     <img width="100%" src="../Pictures/contactUs/store4.jpg" alt="">  
     <h1 class="head1">Contact Us</h1>  
+    <div class="layout-contact-flex">
     <div class="layout-contact">
         <div class="layout-item2">
             <img width="100%" src="../Pictures/contactUs/tommy.jpg" alt="">
@@ -45,7 +47,7 @@
                         <td><textarea class="contact-input1" name="" id="type" cols="28" rows="3" placeholder=" Type your message here"></textarea></td>
                     </tr>
                     <tr>
-                        <td style="text-align: center"><input class="btn-contact" type="submit" onclick="validation()" value="Send Message"></td>
+                        <td style="text-align: center"><input class="btn-contact" type="button" onclick="validation()" value="Send Message"></td>
                     </tr>
                 </table>
             </form>
@@ -53,7 +55,7 @@
     </div>
 
     <div class="layout-contact-2">
-        <div class="layout-item">
+        <div class="layout-item grid-contact">
             <div class="formtable">
                 <img width="70%"  src="../Pictures/index/logo.jpg" alt="" class="img11"><br>
                 <div class="information">
@@ -73,31 +75,39 @@
             <img width="100%" src="../Pictures/contactUs/tommy2.jpg" alt="">
         </div>
     </div>
+    </div>
     <div ng-include="'./footer.html'"></div>
  </body>
 
-    <script>
-        function validation(){
-            var fullname = document.getElementById("fullname").value;
-            var phone = document.getElementById("phone").value;
-            var email = document.getElementById("email").value;
-            var type = document.getElementById("type").value;
-            if (fullname && email && phone && type){
-            Swal.fire({
-                icon: 'success',
-                title: 'Success...',
-                html: 'Login Success'
-                })
-            }else{
+
+<script>
+    function validation(){
+        var fullname = document.getElementById("fullname").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var type = document.getElementById("type").value;
+        if(!fullname || !phone || !email){
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                html: 'information cannot be left blank'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location="./";
-                    }
+                html: 'Please input your information'
                 })
-            }
+            }else if(!type){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                html: 'Please type your message'
+            })
+            }else{
+            Swal.fire({
+                icon: 'success',
+                title: 'Send message successfully!',
+                html: 'We will contact you soon!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location="../index.html";
+                }
+            })
         }
-    </script>
+    }
+</script>

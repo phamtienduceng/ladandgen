@@ -44,7 +44,7 @@
           </tr>
           <tr>
             <td>
-              <input class="signup-input" id="confirm" type="password" placeholder="Confirm Password" name="pass" ng-model="pass" ng-Minlength="6" />
+              <input class="signup-input" id="confirm" type="password" placeholder="Confirm Password" ng-Minlength="6" />
             </td>
           </tr>
           <tr>
@@ -52,7 +52,7 @@
           </tr>
           <tr>
             <td class="center">
-              <button  type="submit" class="btn-signup " onclick="checksubmit()">Sign Up</button>
+              <button  type="submit" class="btn-signup" onclick="checksubmit()">Sign Up</button>
             </td>
             <tr>
               <td class="signup-or">Or you log in with</td>
@@ -81,4 +81,38 @@
   </div>      
     <div ng-include="'./footer.html'"></div>
   </body>
+
+<script>
+  function checksubmit(){
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirm = document.getElementById("confirm").value;
+        var phone = document.getElementById("phone").value;
+        if (!username || !email || !password || !phone || !confirm){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                html: 'Please input full information'
+            })
+        }else if(password != confirm){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                html: 'Password and confirm password is not same'
+            })
+        }else{
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sign up successfully!',
+                    confirmButtonText: 'Log in now'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                  window.location="../HTML/login.html";
+                }
+            })
+        }
+}
+</script>
+
 </html>

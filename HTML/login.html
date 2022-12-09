@@ -30,12 +30,10 @@
       <table>
         <tr>
           <td>
-            <input class="login-input" id="username" type="text" name="name" ng-model="name" ng-Minlength="3" placeholder="Username" required />
-            <p ng-show="myForm.name.$error.minlength " style="color: red;"> min-length is 3!</p></td>
+            <input class="login-input" id="username" type="text" name="name" ng-model="name" ng-Minlength="3" placeholder="Username" />
         </tr>
         <tr>
-          <td><input class="login-input" id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6" required>
-            <p ng-show="myForm.pass.$error.minlength " style="color: red;"> min-length is 6!</p></td>
+          <td><input class="login-input" id="password" type="password" placeholder="Password" name="pass" ng-model="pass" ng-Minlength="6">
         </tr>
         <tr>
           <td class="login-forgot"><a href="../index.html" >Forgotten password?</a></td>
@@ -73,4 +71,28 @@
 </div>
   <div ng-include="'./footer.html'"></div>
 </body>
+
+<script>
+  function checksubmit(){
+    var username = document.getElementById("username").value;
+    var password= document.getElementById("password").value;
+    if(!username || !password){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            html: 'Please input full information'
+        })
+    }else{
+            Swal.fire({
+                icon: 'success',
+                title: 'Log in successfully',
+        }).then((result) => {
+            if (result.isConfirmed) {
+              window.location="../index.html";
+            }
+        })
+    }
+};
+</script>
+
 </html>
