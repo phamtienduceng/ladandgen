@@ -205,6 +205,6 @@ hr{
     font-size: 45px;
     padding-bottom: 50px;
 }
-.img-review:hover{
-    transform: scale(2.45) translateY(-30%);
+.layout-single-product-img button{
+    border: none;
 }
