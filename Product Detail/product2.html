@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Product Detail/Style.css">
+    <link rel="stylesheet" href="../Product Detail/font-awesome-4.7.0/css/font-awesome.min.css">
+  
+    <script src="../Product Detail/javaScript.js"></script>
+    <script src="../JS/angular.min.js"></script>
+    <script src="../product/script.js"></script>
+    
+    <title>Product Detail 2</title>
+</head>
+<body ng-app="">
+
+    <div ng-include="'../product/headerProduct.html'"></div>
+
+    <div class="layout-single-product">
+        <div>
+            <div><img width="100%" src="../Pictures/product/men/men2.jpg" alt=""></div>
+            <div class="layout-single-product-img">
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men2/1.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men2/2.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men2/3.jpg" alt=""></div>
+                <div><img class="img-review" width="100%" src="../Pictures/singleProduct/Men/men2/4.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <div class="category text-bold">
+                Category: Men
+            </div>
+            <div class="product-title text-bold my-3">
+                Grey suit for Men
+            </div>
+            <div class="price-area my-4">
+                <p class="old-price mb-1"><del>$100</del> <span class="old-price-discount text-danger">(20% off)</span></p>
+                <p class="new-price text-bold mb-1">$80</p>
+                <p class="text-secondary">(Additional tax may apply on checkout)</p>
+
+            </div>
+
+            <div class="buttons">
+                <div class="details-title2">Size: </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">M</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">L</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">XL</a>
+                </div>
+                <div class="button2 button-item">
+                    <a href="#" class="shadow btn custom-btn ">XXL</a>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button button-item">
+                    <a href="#" class="shadow btn custom-btn ">Wishlist</a>
+                </div>
+                <div class="button button-item">
+                    <a href="#" class="shadow btn custom-btn ">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-details my-4">
+                <p class="details-title">Product Details</p>
+                <p class="description2">This mid grey herringbone Havana suit is tailored slim with a natural pleated shoulder, AMF stitching, extra wide lapel with Milanese buttonhole and finished with a full canvas and butterfly lining.</p>
+            </div>
+
+            <div class="product-details2 my-4">
+                <p class="details-title text-color mb-1">Design by:</p>
+                <a href="" class="description">Rob</a>
+            </div>
+          
+            <div class="row questions">
+                <div class="icon">
+                    <i class="fa fa-rocket"></i>
+                </div>
+                <div class="text">
+                    Have a question about our products at E-Store? Feel free to contact our representatives via live chat or email.
+                </div>
+            </div>
+
+            <div class="row questions2">
+                <div class="icon2">
+                    <i class="fa fa-truck"></i>
+                </div>
+                <div class="text">
+                    Delivery done in 3 days from date of purchase <br>
+                    Order now to get this product delivery                
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="similar">Similar Product</p>
+    <div class="similar-product">
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men2.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men3.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men4.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+        <div>
+            <a href=""><img width="100%" class="w-100" src="../Pictures/product/men/men5.jpg" alt="Preview"></a>
+            <div  class="title"><a href="">Lovely black dress</a></div>
+            <p class="price">$100</p>
+        </div>
+    </div>
+
+
+    </div>
+    <div ng-include="'../product/footerProduct.html'"></div>
+</body>
+</html>
