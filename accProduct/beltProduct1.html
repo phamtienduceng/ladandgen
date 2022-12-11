@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../Product Detail/Style.css">
-    <link rel="stylesheet" href="../Product Detail/font-awesome-4.7.0/css/font-awesome.min.css">
-  
-    <script src="../Product Detail/javaScript.js"></script>
-    <script src="../JS/angular.min.js"></script>
-    <script src="../product/script.js"></script>
+    <link rel="stylesheet" href="../CSS/singleProduct.css">
     
-    <title>Product Detail 1</title>
+    <script src="../JS/angular.min.js"></script>
+    <script src="../JS/scriptNavProduct.js"></script>
+    <script src="../JS/singleProduct.js"></script>
+    
 </head>
 <body ng-app="">
-    <div ng-include="'../product/headerProduct.html'"></div>
+    <div ng-include="'../HTML/headerProduct.html'"></div>
 
     <div class="layout-single-product">
         <div>
@@ -126,14 +124,6 @@
 
 
     </div>
-    <div ng-include="'../product/footerProduct.html'"></div>
+    <div ng-include="'../HTML/footerProduct.html'"></div>
 </body>
-
-<script>
-    function changeImage(fileName){
-        let img=document.querySelector("#changePic");
-        img.setAttribute("src", fileName);
-    }
-</script>
-
 </html>
