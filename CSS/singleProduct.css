@@ -70,6 +70,18 @@
     margin-bottom: 15px;
 }
 
+.product-details li{
+    list-style:inside;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.product-details{
+    margin-bottom: 10px;
+}
+
+
 .description2{
     font-size: 15px;
     padding-bottom: 15px;
