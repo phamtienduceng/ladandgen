@@ -137,14 +137,16 @@
 }
 
 .description{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 600;
     padding-bottom: 50px;
-    color: black;
+    padding-left: 30px;
+    color: goldenrod;
 }
 
 
 .description:visited{
-    color: black;
+    color: goldenrod;
 }
 
 .buttons{
