@@ -40,7 +40,12 @@ body {
   }
   .navicon{
     margin-top: 10px;
+  }
 
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .navicon{
+      margin-left: -10px;
+    }
   }
   
 /* Create a center-aligned (split) link inside the navigation bar */
@@ -61,6 +66,23 @@ body {
   float: right;
   padding-right: 50px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+  .right {
+    float: right;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width:481px) and  (max-width: 1024px ){
+  .title{
+      padding: 10px 10px 5px 10px;
+      font-size: 25px;
+      color: black;
+      text-align: center;
+  }
+}
+
 
   /* Style the current/active link */
   

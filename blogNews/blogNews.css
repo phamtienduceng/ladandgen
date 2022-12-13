@@ -3,16 +3,54 @@
     margin-left: 120px;
     margin-right: 120px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+    .blog-news{
+        margin-top: 150px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+  
+@media screen and (min-width:481px) and  (max-width: 1024px){
+    .blog-news{
+        margin-top: 150px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+
+
+
 .title-news{
     font-size: 45px;
     font-weight: 600;
     line-height: 50px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+    .title-news{
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
 .author-date{
     display: flex;
     font-size: 18px;
     font-style: italic;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+    .author-date{
+        display: block;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
 .author{
     padding-right: 5px;
 }
@@ -38,6 +76,8 @@ figcaption{
     font-weight: bold;
     margin-bottom: 50px;
 }
+
+
 .hr1{
     margin-left: 120px;
     margin-right: 120px;
@@ -52,6 +92,27 @@ figcaption{
     margin-right: 120px;
     gap: 20px;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+    .related-news-layout{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        margin-right: 30px;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:481px) and  (max-width: 1024px){
+    .related-news-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 60px;
+        margin-right: 60px;
+        gap: 20px;
+    }
+}
+
 
 .related-news1{
     border: black 1px solid;
