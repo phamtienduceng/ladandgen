@@ -48,3 +48,25 @@
 .cartButton{
      margin-top: 120px
     ;}
+#total{
+    font-size: 30px;
+}
+
+.button{
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: goldenrod;
+    border-radius: 15px;
+}
+
+.button a{
+    color: black;
+}
+
+.button a:hover{
+    color: black;
+}
+
+.button a:visited{
+    color: black;
+}

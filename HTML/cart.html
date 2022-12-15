@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lad&Gen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Pictures/index/logosmall.png" />
+    
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/angular.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/ladgen.css">
+</head>
+<body ng-app="">
+    <div ng-include="'../HTML/header.html'"></div>
+    <h2 class="header-section">Cart</h2>
+    <div class="addToCart">
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="head" style="width: 50%;">Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-list">
+                        <div class="cart-item">
+                        <td style="display: flex; align-items: center;"><img style="margin-right: 20px; " width="150px" src="../Pictures/singleProduct/Men/1-1.jpg" alt=""> Mid Grey Herringbone Havana Suit</td>
+                        <td><p><span>$</span><span>999</span></p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer">Delete</td>
+                        </div>
+                    </tr>
+                    <tr class="cart-list">
+                        <div class="cart-item">
+                        <td style="display: flex; align-items: center;"><img style="margin-right: 20px;margin-top: 15px;"  width="150px" src="../Pictures/singleProduct/women/24-1.jpg" alt=""> Nike mini swoosh oversized t-shirt dress</td>
+                        <td><p><span>$</span><span>32.95</span></p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer">Delete</td>
+                        </div>
+                    </tr>
+                    <tr class="cart-list">
+                        <div class="cart-item">
+                        <td style="display: flex; align-items: center;"><img style="margin-right: 20px; margin-top: 15px;" width="150px" src="../Pictures/singleProduct/tie/6-1.jpg" alt=""> Brown Tie</td>
+                        <td><p><span>$</span><span>69</span></p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer">Delete</td>
+                        </div>
+                    </tr>   
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <p id="total">Total: <span id="total">$</span><span id="total">1100.95</span></p>
+            </div>
+            <div>
+                <button class="button"><a href="../HTML/payment.html">Pay Now</a></button>
+            </div>
+        </form>
+    </div>
+    <div ng-include="'../HTML/footer.html'"></div>
+    <script src="../JS/cart.js"></script>
+</body>
+</html>
