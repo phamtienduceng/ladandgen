@@ -228,3 +228,24 @@ img{
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+.search{
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-bottom: -100px;
+  display: flex;
+}
+
+.filter{
+  font-size: 25px;
+  font-weight: 100;
+  margin-right: 50px;
+}
+.filter option{
+  font-size: 20px;
+}
+
+.select{
+  height: 30px;
+  width: 100px;
+}

@@ -23,8 +23,8 @@ function loadJSON(){
         data.forEach(product =>{
             html += `
                 <div class="card">
-                    <a href="#"><img class="item-img" width="100%" src="${product.Image}" alt="Denim Jeans" style="width:100%"></a>
-                    <a href="#"><p class="item-name">${product.Product}</p></a>
+                    <a href="${product.Single}"><img class="item-img" width="100%" src="${product.Image}" alt="Denim Jeans" style="width:100%"></a>
+                    <a href="${product.Single}"><p class="item-name">${product.Product}</p></a>
                     <p class="price">$${product.Price}</p>
                     <button type = "button" class = "add-to-cart-btn">
                         </i>Add To Cart
