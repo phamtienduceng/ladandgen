@@ -10,62 +10,49 @@
     <link rel="stylesheet" href="../CSS/cart.css">
     <script src="../JS/angular.min.js"></script>
     <link rel="stylesheet" href="../assets/css/ladgen.css">
+    <link rel="stylesheet" href="../CSS/addToCart.css">
 </head>
 <body ng-app="">
     <div ng-include="'../HTML/header.html'"></div>
     <div class="wrapper">
-        <h1>Your Cart</h1>
-            <div class="project">
-            <div class="shop">
-                <div class="box">
-                <img src="../Pictures/index/sel2.jpg" />
-                <div class="content">
-                    <h3>New Green Jacket</h3>
-                    <h4>Price: $120.00</h4>
-                    <p class="unit">Quantity: <input name="" value="2" /></p>
-                    <p class="btn-area">
-                    <i aria-hidden="true" class="fa fa-trash"></i>
-                    <span class="btn2">Remove</span>
-                    </p>
+
+        <div class="addToCart">
+            <h2>Cart</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 50%;">Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td style="display: flex; align-items: center;"><img  width="70px" src="../Pictures/singleProduct/Men/1-1.jpg" alt="">Mid Grey Herringbone Havana Suit</td>
+                            <td><p><span>$</span><span>999</span></p></td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer">Delete</td>
+                        </tr>
+                        <tr>
+                            <td style="display: flex; align-items: center;"><img width="70px" src="../Pictures/singleProduct/Men/2-1.jpg" alt="">Navy Herringbone Havana Suit</td>
+                            <td><p><span>$</span><span>779</span></p></td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td style="cursor: pointer">Delete</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="price-total">
+                    <p>Total: <span>$</span><span class="total">0</span></p>
                 </div>
+                <div>
+                    <button>Pay Now</button>
                 </div>
-                <div class="box">
-                <img src="../Pictures/index/sel1.jpg" />
-                <div class="content">
-                    <h3>Classic Dress</h3>
-                    <h4>Price: $45.00</h4>
-                    <p class="unit">Quantity: <input class="unit1" name="" value="1" /></p>
-                    <p class="btn-area">
-                    <i aria-hidden="true" class="fa fa-trash"></i>
-                    <span class="btn2">Remove</span>
-                    </p>
-                </div>
-                </div>
-                <div class="box">
-                <img src="../Pictures/index/sel3.jpg" />
-                <div class="content">
-                    <h3>Spring Collection</h3>
-                    <h4>Price: $130.00</h4>
-                    <p class="unit">Quantity: <input name="" value="0" /></p>
-                    <p class="btn-area">
-                    <i aria-hidden="true" class="fa fa-trash"></i>
-                    <span class="btn2">Remove</span>
-                    </p>
-                </div>
-                </div>
-            </div>
-            <div class="right-bar">
-                <p><span>Subtotal</span> <span>$299.00</span></p>
-                <hr />
-                <p><span>Tax (5%)</span> <span>$14.95</span></p>
-                <hr />
-                <p><span>Shipping</span> <span>$15</span></p>
-                <hr />
-                <p><span>Total</span> <span>$328.95</span></p>
-                <a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
-            </div>
-            </div>
+            </form>
         </div>
+
     <div ng-include="'../HTML/footer.html'"></div>
+    <script src="../JS/addToCart.js"></script>
 </body>
 </html>
