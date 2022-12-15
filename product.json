@@ -86,7 +86,7 @@
     {"Single": "./accProduct/bootProduct1.html", "Image": "./pictures/product/boot/boot1.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "107.50" },
     {"Single": "./accProduct/bootProduct2.html", "Image": "./pictures/product/boot/boot2.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "89.50" },
     {"Single": "./accProduct/bootProduct3.html", "Image": "./pictures/product/boot/boot3.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "101" },
-    {"Single": "./accProduct/bootProduct4.html", "Image": "./pictures/product/boot/boot4.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "31.50" },
-    {"Single": "./accProduct/bootProduct5.html", "Image": "./pictures/product/boot/boot5.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "60" },
-    {"Single": "./accProduct/bootProduct6.html", "Image": "./pictures/product/boot/boot6.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "135" }
+    {"Single": "./accProduct/bootProduct4.html", "Image": "./Pictures/product/boot/boot4.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "31.50" },
+    {"Single": "./accProduct/bootProduct5.html", "Image": "./Pictures/product/boot/boot5.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "60" },
+    {"Single": "./accProduct/bootProduct6.html", "Image": "./Pictures/product/boot/boot6.jpg","Product": "Levi's Amos lace up leather boot in black", "Price": "135" }
 ]
