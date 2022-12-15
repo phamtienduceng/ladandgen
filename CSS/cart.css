@@ -70,3 +70,56 @@
 .button a:visited{
     color: black;
 }
+
+@media screen and (min-width:320px) and  (max-width: 480px){
+    .addToCart{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+        border: none    ;
+    }
+    
+  }
+
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+    .addToCart img{
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+
+    .td1{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+
+    #total{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (min-width:320px) and  (max-width: 480px){
+
+    .addToCart thead{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width:481px) and  (max-width: 1024px){
+    .addToCart{
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        border: solid black 1px;
+        padding: 20px;
+    }
+    
+  }
