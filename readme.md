@@ -8,12 +8,10 @@ Project title: THE ONLINE FASHION SHOPPING WEBSITE PROJECT
 4 collaborators:
 
 Student1414230 Bùi Trần Anh Trí
-
 Student1414357 Nguyễn Hoàng Trung
-
 Student1414248 Phạm Tiến Đức
-
 Student1396925 Hoàng Ngọc Phú
+
 ============================
 
 eProject documentation at https://github.com/phamtienduceng/ladandgen/tree/main/document
