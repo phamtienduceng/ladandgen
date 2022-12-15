@@ -116,3 +116,115 @@ img{
 .layout-filter{
   margin-top: 120px;
 }
+
+.cart{
+  justify-self: flex-end;
+  padding-right: 8px;
+}
+#cart-btn{
+  border: none;
+  font-size: 1.5rem;
+  background: none;
+  color: var(--granite-gray);
+  position: relative;
+}
+#cart-count-info{
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: var(--fire-bush);
+  color: #fff;
+  font-size: 1rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.cart-container{
+  position: absolute;
+  overflow-y: scroll;
+  background: #fff;
+  width: 100%;
+  height: 600px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.21);
+  display: none;
+}
+.cart-container::-webkit-scrollbar{
+  width: 8px;
+}
+.cart-container::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/* js related class */
+.show-cart-container{
+  display: block;
+}
+/*  */
+.cart-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  padding: 1.2rem 0.6rem;
+  height: 140px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+.cart-item:last-child{
+  border-bottom: none;
+}
+.cart-item-del-btn{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0.05rem 0.45rem;
+  font-size: 1.4rem;
+  background: var(--fire-bush);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cart-item img{
+  width: 80px;
+}
+.cart-item-info{
+  text-align: center;
+}
+.cart-item-info span{
+  display: block;
+}
+.cart-total{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--fire-bush);
+  color: #fff;
+}
+.cart-total h3{
+  margin-right: 0.2rem;
+  font-size: 1.3rem;
+}
+#cart-total-value{
+  font-size: 1.3rem;
+  font-weight: 500;
+}

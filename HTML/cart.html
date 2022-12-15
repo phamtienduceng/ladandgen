@@ -8,51 +8,44 @@
     <link rel="shortcut icon" type="image/x-icon" href="../Pictures/index/logosmall.png" />
     
     <link rel="stylesheet" href="../CSS/cart.css">
+    <script src="../JS/cart.js"></script>
     <script src="../JS/angular.min.js"></script>
     <link rel="stylesheet" href="../assets/css/ladgen.css">
-    <link rel="stylesheet" href="../CSS/addToCart.css">
 </head>
 <body ng-app="">
     <div ng-include="'../HTML/header.html'"></div>
-    <div class="wrapper">
-
-        <div class="addToCart">
-            <h2>Cart</h2>
-            <form action="">
-                <table>
-                    <thead>
-                        <tr>
-                            <td style="width: 50%;">Product</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- <tr>
-                            <td style="display: flex; align-items: center;"><img  width="70px" src="../Pictures/singleProduct/Men/1-1.jpg" alt="">Mid Grey Herringbone Havana Suit</td>
-                            <td><p><span>$</span><span>999</span></p></td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td style="cursor: pointer">Delete</td>
-                        </tr>
-                        <tr>
-                            <td style="display: flex; align-items: center;"><img width="70px" src="../Pictures/singleProduct/Men/2-1.jpg" alt="">Navy Herringbone Havana Suit</td>
-                            <td><p><span>$</span><span>779</span></p></td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td style="cursor: pointer">Delete</td>
-                        </tr> -->
-                    </tbody>
-                </table>
-                <div class="price-total">
-                    <p>Total: <span>$</span><span class="total">0</span></p>
-                </div>
-                <div>
-                    <button>Pay Now</button>
-                </div>
-            </form>
-        </div>
-
+    <h2 class="header-section">Cart</h2>
+    <div class="addToCart">
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <td class="head" style="width: 50%;">Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart-list">
+                        <div class="cart-item">
+                        <td style="display: flex; align-items: center;"><img  width="150px" src="../Pictures/singleProduct/Men/1-1.jpg" alt="">Mid Grey Herringbone Havana Suit</td>
+                        <td><p><span>$</span><span>999</span></p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer">Delete</td>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <p>Total: <span>$</span><span id="total">0</span></p>
+            </div>
+            <div>
+                <button>Pay Now</button>
+            </div>
+        </form>
+    </div>
     <div ng-include="'../HTML/footer.html'"></div>
-    <script src="../JS/addToCart.js"></script>
+    <script src="../JS/cart.js"></script>
 </body>
 </html>
